@@ -71,7 +71,7 @@ export class BedAccessory {
         this.services[side]!.numberControl!.getCharacteristic(this.platform.Characteristic.Brightness)
           .onSet((async (value: CharacteristicValue) => this.setNumber(side, value as number)).bind(this))
           .onGet((async () => this.getNumber(side)).bind(this))
-          .setProps({ minStep: 5, minValue: 5, maxValue: 100 });
+          .setProps({ minStep: 5, minValue: 0, maxValue: 100 });
       }
 
 
