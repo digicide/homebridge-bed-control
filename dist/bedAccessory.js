@@ -243,16 +243,16 @@ class BedAccessory {
             let actuatorPosition;
             switch (`${side}${actuator}`) {
                 case `${interfaces_1.BedSideKey_e.LeftSide}${interfaces_1.Actuator_e.Head}`:
-                    actuatorPosition = +data.fsLeftHeadPosition;
+                    actuatorPosition = parseInt(data.fsLeftHeadPosition, 16);
                     break;
                 case `${interfaces_1.BedSideKey_e.RightSide}${interfaces_1.Actuator_e.Head}`:
-                    actuatorPosition = +data.fsRightHeadPosition;
+                    actuatorPosition = parseInt(data.fsRightHeadPosition, 16);
                     break;
                 case `${interfaces_1.BedSideKey_e.LeftSide}${interfaces_1.Actuator_e.Foot}`:
-                    actuatorPosition = +data.fsLeftFootPosition;
+                    actuatorPosition = parseInt(data.fsLeftFootPosition, 16);
                     break;
                 case `${interfaces_1.BedSideKey_e.RightSide}${interfaces_1.Actuator_e.Foot}`:
-                    actuatorPosition = +data.fsRightFootPosition;
+                    actuatorPosition = parseInt(data.fsRightFootPosition, 16);
                     break;
             }
             this.platform.log.debug(`[${this.bedName}][${side}][${actuator}] Get Position -> ${actuatorPosition}`);
