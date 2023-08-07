@@ -1,0 +1,25 @@
+export declare const loginURL: string;
+export declare const registrationURL: string;
+export declare const sleeperURL: string;
+export declare const bedURL: string;
+export declare const sleepDataURL: string;
+export declare const sleepSliceDataURL: string;
+export declare const familyStatusURL: string;
+export declare const bedStatusURL: string;
+export declare const bedPauseModeURL: string;
+export declare const sleepNumberURL: string;
+export declare const responsiveAirURL: string;
+export declare const forceIdleURL: string;
+export declare const pumpStatusURL: string;
+export declare const presetURL: string;
+export declare const foundationStatusURL: string;
+export declare const outletStatusURL: string;
+export declare const motionURL: string;
+export declare const underbedLightURL: string;
+export declare const pinchURL: string;
+export declare const systemURL: string;
+export declare const statusURL: string;
+export declare const footwarmingURL: string;
+export declare const adjustmentURL: string;
+export declare const adjustURL: string;
+//# sourceMappingURL=constants.d.ts.map
